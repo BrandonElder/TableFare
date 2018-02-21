@@ -1,5 +1,5 @@
-body {
-  background: url('hero1.jpg') no-repeat center center fixed; 
+.bg-img {
+  background: url('bgimg.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,4 +9,9 @@ body {
 
 .navbar {
   background: transparent;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
