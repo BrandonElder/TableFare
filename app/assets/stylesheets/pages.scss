@@ -1,5 +1,5 @@
 .bg-img {
-  background: url('bgimg.jpg') no-repeat center center fixed; 
+  background: url('bgimg4.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,11 +7,35 @@
   height: 100vh;
 }
 
-.navbar {
-  background: transparent;
+#hero {
+  background: white;
+  height: 200px;
+  width: 350px;
+  margin: 30vh auto 0;
+  padding: 10px;
 }
 
-.navbar-toggleable-md .navbar-nav .nav-link {
+#inner-hero {
+  border: 1px solid black;
+  height: 100%
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.navbar-collapse {
+  @media (max-width: 992px) {
+    margin: 8% 1% 0;
+    text-align: right;
+  }
+
+  @media (min-width: 992px) {
+    margin-right: 2%;
+  }
+}
+
+.about-tf {
+  height: 70vh;
 }
