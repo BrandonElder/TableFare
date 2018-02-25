@@ -1,0 +1,25 @@
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-transparent">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+      <li class="nav-item">
+        <%= link_to "Home", pages_home_path, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to "What is Table Fare?", pages_about_path, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Purchase</a>
+      </li>
+      <li class="nav-item">
+        <%= link_to "FAQs", pages_faqs_path, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", pages_contact_path, class: "nav-link"%>
+      </li>
+    </ul>
+  </div>
+</nav>
