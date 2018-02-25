@@ -34,24 +34,23 @@
 #inner-hero {
   border: 1px solid black;
   height: 100%;
+}
+
+.hero-text {
+  display: inline-flex;
+  justify-content: center;
+  font-family: 'Coyote';
+  font-size: 2rem;
   color: black;
 }
 
-.hero-text-top {
-  display: inline-flex;
-  justify-content: center;
+.text-top {
   padding: 40px 10px 0px;
-  font-family: 'Coyote';
-  font-size: 2rem;
   letter-spacing: 13px;
 }
 
-.hero-text-btm {
-  display: inline-flex;
-  justify-content: center;
+.text-btm {
   padding: 0px 10px 40px;
-  font-family: 'Coyote';
-  font-size: 2rem;
   letter-spacing: 8px;
 }
 
@@ -61,5 +60,21 @@
 }
 
 .about-tf {
-  height: 70vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.about-tf-header {
+  font-family: Coyote;
+}
+
+.about-tf-text {
+  font-family: 'Karla', sans-serif;
+}
+
+#about-tf-end {
+  font-weight: 700;
+}
+
