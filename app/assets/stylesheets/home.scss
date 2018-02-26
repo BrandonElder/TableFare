@@ -28,7 +28,8 @@
 .hero {
   background: white;
   margin: 30vh auto 0;
-  padding: 15px;  
+  padding: 15px;
+  box-shadow: 6px 7px 4px -3px rgba(0,0,0,0.6);
 }
 
 #inner-hero {
@@ -60,10 +61,17 @@
 }
 
 .about-tf {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5% 0;
+}
+
+.about-tf-expand {
+  @media (max-width: 576px) {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
 }
 
 .about-tf-header {
@@ -72,6 +80,12 @@
 
 .about-tf-text {
   font-family: 'Karla', sans-serif;
+
+  @media (max-width: 992px) {
+    font-size: 22px;
+    
+    letter-spacing: 1px;
+  }
 }
 
 #about-tf-end {
