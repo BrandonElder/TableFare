@@ -27,7 +27,7 @@
 
 .hero {
   background: white;
-  margin: 30vh auto 0;
+  margin: 25vh auto 0;
   padding: 15px;
   box-shadow: 6px 7px 4px -3px rgba(0,0,0,0.6);
 }
@@ -61,29 +61,18 @@
 }
 
 .about-tf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5% 0;
+  margin: 8% auto;
 }
 
-.about-tf-expand {
-  @media (max-width: 576px) {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-}
-
-.about-tf-header {
+.tf-header {
   font-family: Coyote;
 }
 
-.about-tf-text {
+.tf-text {
   font-family: 'Karla', sans-serif;
 
   @media (max-width: 992px) {
     font-size: 22px;
-    
     letter-spacing: 1px;
   }
 }
@@ -92,3 +81,19 @@
   font-weight: 700;
 }
 
+.hr-img {
+  display: flex;
+  justify-content: center;
+}
+
+.included-tf {
+  height: 40vh;
+  margin: 8% auto;
+}
+
+.footer {
+  height: 15vh;
+  background-color: #f5f5f5;
+  line-height: 7rem;
+  text-align: center;
+}
