@@ -15,7 +15,7 @@ function navScroll() {
 function navAbout() {
   $('.nav-about').click(function() {
     $('html,body').animate({
-      scrollTop: $('.about-tf').offset().top},
+      scrollTop: $('.about-tf').offset().top - 135},
       'slow');
       return false;
   });
@@ -24,4 +24,5 @@ function navAbout() {
 document.addEventListener("turbolinks:load", function() {
   navMenu();
   navScroll();
+  navAbout();
 })
