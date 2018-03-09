@@ -1,9 +1,24 @@
-<%= form_for @message, url: create_message_url do |f| %>
-  <%= notice %>
-  <%= @message.errors.full_messages.join(', ') %>
+<div id="overlay"></div>
+<div class="split-image">
+</div>
+<div class="split-content">
+  <div class="cont-contactBtn">
+    <div class="contact-info">
+    <p id="contact-text">Send us a message:</p>
+    <p id="contact-subtext">If you would like to contact us, please email <%= mail_to "tablefare@gmail.com", "tablefare@gmail.com", id: 'contact-email' %> or fill out the form below.  We would love to hear from you!</p>
+  </div>
+    <div class="face">
+      <!-- <a href="#" class="flip close"></a> -->
+      <%= form_for @message, url: create_message_url, html: { class: 'contact-form' } do |f| %>
+        <%= notice %>
+        <%= @message.errors.full_messages.join(', ') %>
+        <%= f.text_field :name, placeholder: 'name', class: 'gutter frm' %>
+        <%= f.text_field :company, placeholder: 'company', class: 'frm' %>
+        <%= f.email_field :email, placeholder: 'email', class: 'gutter frm' %>
+        <%= f.text_area :body, placeholder: 'Leave a message', class: 'txt-frm' %>
+        <%= f.submit 'Send' %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-  <%= f.text_field :name, placeholder: 'name' %>
-  <%= f.email_field :email, placeholder: 'email' %>
-  <%= f.text_area :body, placeholder: 'body' %>
-  <%= f.submit 'Send' %>
-<% end %>
