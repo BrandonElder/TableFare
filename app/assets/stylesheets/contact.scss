@@ -37,7 +37,6 @@ a, p {
 }
 
 .cont-contactBtn {
-
   height: 589px;
   margin: 23vh auto;
   width: 90%;
@@ -61,7 +60,7 @@ a, p {
     margin-top: 50px;
 
     input, textarea {
-      /*border: 1px solid #808080;*/
+      border: 1px solid #808080;
       font-size: 14px;
       padding: 10px 0;
       text-transform: uppercase;
@@ -150,7 +149,7 @@ a, p {
     background-position: 50% 0;
     width: 50%;
     background-image: url('contact.jpg');
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 

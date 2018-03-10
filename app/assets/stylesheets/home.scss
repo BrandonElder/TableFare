@@ -60,6 +60,13 @@
   justify-content: center;
 }
 
+#about:before {
+  content: '';
+  display: block;
+  margin: -110px 0 0;
+  height: 110px;
+}
+
 .about-tf {
   margin: 8% auto;
 }

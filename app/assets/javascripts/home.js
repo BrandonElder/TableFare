@@ -15,7 +15,7 @@ function navScroll() {
 function navAbout() {
   $('.nav-about').click(function() {
     $('html,body').animate({
-      scrollTop: $('.about-tf').offset().top - 135},
+      scrollTop: $('.about-tf').offset().top },
       'slow');
       return false;
   });
