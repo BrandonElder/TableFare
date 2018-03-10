@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   root 'pages#home'
 
   get 'home', to: 'pages#home'
@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'faqs', to: 'pages#faqs'
   get 'contact-me', to: 'messages#contact', as: 'new_message'
   post 'contact-me', to: 'messages#create', as: 'create_message'
+  resources :subscribers
 
 end
