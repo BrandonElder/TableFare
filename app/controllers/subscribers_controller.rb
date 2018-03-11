@@ -1,5 +1,5 @@
 class SubscribersController < ApplicationController
-  
+
   def index
     @subscriber = Subscriber.new
   end
@@ -8,9 +8,9 @@ class SubscribersController < ApplicationController
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
       cookies[:saved_lead] = true
-      redirect_to subscribers_path, notice: "Thank You!"
+      redirect_to root_path, notice: "Thank you for subscribing to our newsletter!"
     else
-      redirect_to subscribers_path, notic: "Failed to save."
+      redirect_to root_path, notic: "We're sorry...something went wrong."
     end
   end
 
