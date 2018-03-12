@@ -4,3 +4,13 @@
   margin-bottom: 0;
   padding: 0.85rem 1.25rem;
 }
+
+#subscriber-form {
+
+  input[type="text"],
+  input[type="email"],
+  #subscribe-submit-btn {
+    font-family: 'Karla', sans-serif;
+    line-height: initial;
+  }
+}

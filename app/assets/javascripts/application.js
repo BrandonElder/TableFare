@@ -21,6 +21,6 @@
 
 document.addEventListener("turbolinks:load", function() {
   $(function() {
-     $(".alert").fadeOut(1500);
+     $(".alert").fadeOut(2000);
    });
 });
