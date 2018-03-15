@@ -1,8 +1,9 @@
+<span id="newsletter-signup">Newsletter Signup </span>
 <% if cookies[:saved_subscriber] %>
   Thanks for signing up!
 <% else %>
   <%= form_for @subscriber do |f| %>
     <%= f.email_field :email, placeholder: "Email" %>
-    <%= f.submit value: "Subscribe", id: "subscribe-submit-btn" %>
+    <%= f.submit "Add Me", id: "subscribe-submit-btn" %>
   <% end %>
 <% end %>

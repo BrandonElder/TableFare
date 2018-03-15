@@ -12,5 +12,23 @@
   #subscribe-submit-btn {
     font-family: 'Karla', sans-serif;
     line-height: initial;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #636c72;
+    outline: none;
+    color: #636c72;
   }
+
+  #subscribe-submit-btn {
+    border-left: none;
+  }
+}
+
+#new_subscriber {
+  display: inline-flex;
+}
+
+#newsletter-signup {
+  margin-right: 16px;
+  display: inline-flex;
 }
