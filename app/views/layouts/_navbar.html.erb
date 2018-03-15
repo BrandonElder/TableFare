@@ -9,13 +9,13 @@
         <%= link_to "Home", home_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
-        <%= link_to "What is Table Fare?", "#", class: "nav-link nav-about"%>
+        <%= link_to "What is Table Fare?", home_path(anchor: 'about'), class: "nav-link nav-about"%>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Purchase</a>
       </li>
       <li class="nav-item">
-        <%= link_to "FAQs", faqs_path, class: "nav-link"%>
+        <%= link_to "FAQs", home_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
         <%= link_to "Contact", new_message_path, class: "nav-link"%>

@@ -5,7 +5,7 @@
   <div class="cont-contactBtn">
     <div class="contact-info">
     <p id="contact-text">Send us a message:</p>
-    <p id="contact-subtext">If you would like to contact us, please email <%= mail_to "tablefare@gmail.com", "tablefare@gmail.com", id: 'contact-email' %> or fill out the form below.  We would love to hear from you!</p>
+    <p id="contact-subtext">If you would like to contact us, please email <%= mail_to "tablefarecards@gmail.com", "tablefarecards@gmail.com", id: 'contact-email' %> or fill out the form below.  We would love to hear from you!</p>
   </div>
     <div class="face">
       <!-- <a href="#" class="flip close"></a> -->
@@ -15,7 +15,7 @@
         <%= f.text_field :name, placeholder: 'name', class: 'gutter frm' %>
         <%= f.text_field :company, placeholder: 'company', class: 'frm' %>
         <%= f.email_field :email, placeholder: 'email', class: 'gutter frm' %>
-        <%= f.text_area :body, placeholder: 'Leave a message', class: 'txt-frm' %>
+        <%= f.text_area :body, placeholder: 'message', class: 'txt-frm' %>
         <%= f.submit 'Send' %>
       <% end %>
     </div>
