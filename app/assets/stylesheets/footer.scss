@@ -2,3 +2,63 @@
   height: auto;
   font-family: 'Karla', sans-serif;
 }
+
+.footer-text {
+  margin-top: 25px;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 80px;
+
+  @media (max-width: 992px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.social-button {
+  opacity: 0.7;
+}
+
+.alert {
+  background-color: seashell;
+  height: 60px;
+  margin-bottom: 0;
+  padding: 0.85rem 1.25rem;
+}
+
+/* NEWSLETTER SUBSCRIBE FORM */
+
+#subscriber-form {
+
+  input[type="text"],
+  input[type="email"],
+  #subscribe-submit-btn {
+    font-family: 'Karla', sans-serif;
+    line-height: initial;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #636c72;
+    outline: none;
+    color: #636c72;
+  }
+
+  #subscribe-submit-btn {
+    border-left: none;
+  }
+
+  @media (max-width: 992px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+#new_subscriber {
+  display: inline-flex;
+}
+
+#newsletter-signup {
+  margin-right: 16px;
+  display: inline-flex;
+}
