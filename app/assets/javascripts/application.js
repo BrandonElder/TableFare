@@ -18,3 +18,9 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+  $(function() {
+     $(".alert").fadeOut(2000);
+   });
+});

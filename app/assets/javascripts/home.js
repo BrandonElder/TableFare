@@ -21,8 +21,18 @@ function navAbout() {
   });
 }
 
+function navRestaurants() {
+  $('.nav-rest').click(function() {
+    $('html,body').animate({
+      scrollTop: $('.included-tf').offset().top },
+      'slow');
+      return false;
+  });
+}
+
 document.addEventListener("turbolinks:load", function() {
   navMenu();
   navScroll();
   navAbout();
+  navRestaurants();
 })

@@ -1,9 +1,19 @@
-<footer class="footer">
+<footer class="footer text-muted">
   <div class="container-fluid">
     <div class="row">
-      <span class="text-muted col">
-        table fare</span>
-      <span class="text-muted col">press</span>
+      
+      <span id="subscriber-form", class="col-9">
+        <%= render 'subscribers/index' %>
+      </span>
+      <span class="col-3 footer-text">
+        <%= link_to 'http://facebook.com' do %>
+          <%= image_tag 'facebook.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://instagram.com' do %>
+          <%= image_tag 'instagram.png', class: 'social-button' %>
+        <% end %>
+        <p>&copy; Table Fare | 2018</p>
+      </span>
     </div>
   </div>
 </footer>
