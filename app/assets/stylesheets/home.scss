@@ -25,39 +25,47 @@
   opacity: 0.7;
 }
 
-.hero {
-  background: white;
-  margin: 25vh auto 0;
-  padding: 15px;
-  box-shadow: 6px 7px 4px -3px rgba(0,0,0,0.6);
-}
-
-#inner-hero {
-  border: 1px solid black;
-  height: 100%;
+#hero {
+  margin: 30vh auto 0;
+  line-height: 140px;
 }
 
 .hero-text {
-  display: inline-flex;
-  justify-content: center;
-  font-family: 'Coyote';
-  font-size: 2rem;
-  color: black;
+  font-family: 'Arsenale White Regular';
+  font-size: 7.5rem;
+  color: white;
+  text-align: center;
+
+  @media (max-width: 992px) {
+    font-size: 8rem;
+    line-height: 1.2;
+  }
 }
 
 .text-top {
-  padding: 40px 10px 0px;
-  letter-spacing: 13px;
+  letter-spacing: 20px;
 }
 
 .text-btm {
-  padding: 0px 10px 40px;
   letter-spacing: 8px;
 }
 
 .hero-icons {
   display: inline-flex;
   justify-content: center;
+}
+
+.hero-icon + .hero-icon {
+  margin-left: 90px;
+}
+
+.hero-icon img {
+  height: 90px;
+
+  @media (max-width: 992px) {
+    height: 120px;
+    margin: 40px 0 60px 0;
+  }
 }
 
 #about:before {
