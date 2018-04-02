@@ -12,6 +12,13 @@ function navScroll() {
   });
 }
 
+function navMobileScroll() {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-toggler");
+    $nav.toggleClass('scroll', $(this).scrollTop() > $nav.height());
+  });
+}
+
 function navAbout() {
   $('.nav-about').click(function() {
     $('html,body').animate({
@@ -33,6 +40,7 @@ function navRestaurants() {
 document.addEventListener("turbolinks:load", function() {
   navMenu();
   navScroll();
+  navMobileScroll();
   navAbout();
   navRestaurants();
 })
