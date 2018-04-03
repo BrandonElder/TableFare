@@ -5,6 +5,16 @@ function navMenu() {
   });
 }
 
+function navHide() {
+  if (window.matchMedia('(max-width: 992px)').matches) {
+    $('.nav-about, .nav-rest').click(function() {
+      $('.navbar-collapse').removeClass('show');
+      $('#overlay').removeClass('overlay');
+      $('.bg-img').removeClass('opaque');
+    });
+  }
+}
+
 function navScroll() {
   $(document).scroll(function () {
     var $nav = $(".navbar");
@@ -39,6 +49,7 @@ function navRestaurants() {
 
 document.addEventListener("turbolinks:load", function() {
   navMenu();
+  navHide();
   navScroll();
   navMobileScroll();
   navAbout();
