@@ -12,8 +12,14 @@
   cursor: pointer;
 }
 
+.hide-menu {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
 .bg-img {
-  background: url('bgimg4.jpg') no-repeat center center fixed; 
+  background: url('bgimg4.jpg') no-repeat center center ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,6 +34,10 @@
 #hero {
   margin: 30vh auto 0;
   line-height: 140px;
+
+  @media (max-width: 992px) and (orientation:landscape) {
+    margin-top: 20vh;
+  }
 }
 
 .hero-text {
@@ -39,6 +49,10 @@
   @media (max-width: 992px) {
     font-size: 12rem;
     line-height: 1.2;
+  }
+
+  @media (max-width: 992px) and (orientation:landscape) {
+    font-size: 10rem;
   }
 }
 
@@ -81,13 +95,18 @@
 
 .tf-header {
   font-family: Coyote;
+
+  @media (max-width: 992px) {
+    font-size: 3em;
+  }
 }
 
 .tf-text {
   font-family: 'Karla', sans-serif;
+  font-size: 1.1rem;
 
   @media (max-width: 992px) {
-    font-size: 22px;
+    font-size: 2rem;
     letter-spacing: 1px;
   }
 }
